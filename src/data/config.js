@@ -4,7 +4,7 @@ module.exports = {
   author: 'Daniel Holzmann',
   url: 'https://portfolio.velopment.at',
   legalName: 'Daniel Holzmann',
-  defaultDescription: 'I’m Daniel and I’m a Backend & Frontend engineer!',
+  defaultDescription: 'I’m Daniel and I’m a full-stack JavaScript engineer!',
   socialLinks: {
     twitter: 'http://www.twitter.com/h2online',
     github: 'https://github.com/dVelopment',
