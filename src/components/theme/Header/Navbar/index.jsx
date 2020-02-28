@@ -1,12 +1,12 @@
-import React from 'react'
-import { Link } from 'gatsby'
 import { Container } from 'components/common'
+import { Link } from 'gatsby'
 import NavbarLinks from '../NavbarLinks'
+import React from 'react'
 import { Wrapper } from './styles'
 
 const Navbar = () => (
 	<Wrapper as={Container}>
-		<Link to="/">John Doe</Link>
+		<Link to="/">Daniel Holzmann</Link>
 		<NavbarLinks desktop />
 	</Wrapper>
 )

@@ -1,24 +1,21 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Thumbnail from 'assets/thumbnail/thumbnail.png'
 import {
-  url,
-  defaultDescription,
-  social,
-  defaultTitle,
-  socialLinks,
   address,
   contact,
-  legalName,
+  defaultDescription,
+  defaultTitle,
   foundingDate,
+  legalName,
   logo,
-} from 'data/config'
+  social,
+  socialLinks,
+  url,
+} from 'data/config';
 
-export const SEO = ({
-  title = defaultTitle,
-  description = defaultDescription,
-  location = '',
-}) => {
+import Helmet from 'react-helmet';
+import React from 'react';
+import Thumbnail from 'assets/thumbnail/thumbnail.png';
+
+export const SEO = ({ title = defaultTitle, description = defaultDescription, location = '' }) => {
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -45,20 +42,17 @@ export const SEO = ({
 		},
 		"sameAs": [
 			"${socialLinks.twitter}",
-			"${socialLinks.google}",
-			"${socialLinks.youtube}",
 			"${socialLinks.linkedin}",
-			"${socialLinks.instagram}",
 			"${socialLinks.github}"
 		]
-  	}`
+  	}`;
 
   return (
     <Helmet>
       <meta name="description" content={description} />
       <meta name="image" content={Thumbnail} />
 
-      <meta property="og:url" content={`${url}${location}/?ref=smakosh.com`} />
+      <meta property="og:url" content={`${url}${location}/?ref=portfolio.velopment.at`} />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -76,5 +70,5 @@ export const SEO = ({
       <title>{title}</title>
       <html lang="en" dir="ltr" />
     </Helmet>
-  )
-}
+  );
+};
