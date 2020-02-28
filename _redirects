@@ -1,0 +1,7 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://danielholzmann.at/* https://danielholzmann.com/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://thirsty-murdock-0ce2de.netlify.com/* https://danielholzmann.com/:splat 301!
